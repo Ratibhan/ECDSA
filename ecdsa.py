@@ -158,9 +158,7 @@ for key in privKeys:
     print("Public Address:", base58.b58encode(addr))
     print("Public Address Compressed:", base58.b58encode(addr_c))
 
-    ## WIF https://en.bitcoin.it/wiki/Wallet_import_format
-    ## compressed WIF http://sourceforge.net/mailarchive/forum.php?thread_name=CAPg%2BsBhDFCjAn1tRRQhaudtqwsh4vcVbxzm%2BAA2OuFxN71fwUA%40mail.gmail.com&forum_name=bitcoin-development
-
+   
     keyWIF = cointype[1] + key
     keyWIF_c = cointype[1] + key + b"\x01"
     
